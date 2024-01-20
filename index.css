@@ -20,6 +20,14 @@ nav{
     justify-content: space-between;
 }
 
+.logo{
+    position: fixed;
+    height: auto;
+    left: 330px;
+    top: 35px;
+    width: 60px;
+  }
+  
 .nav_links{
     list-style: none;
     display: flex;
@@ -41,8 +49,7 @@ nav{
 
 .link .nav_btn {
     width: fit-content;
-    padding: 1rem;
-    margin-top: 40px;
+    padding: 10px 25px;
     background-color: #000000;
     color: white;
     outline: none;
