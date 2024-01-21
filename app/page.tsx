@@ -3,9 +3,10 @@ import HeroIMG from "@/public/int.jpg"
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-          <section className="flex items-center content-center gap-10">
-        <div className="">
+    <main className="p-10 flex spa">
+      <section className="flex flex-col md:flex-row items-center justify-center gap-10 my-20">
+
+        <div className="flex flex-col items-start gap-4 basis-1/3">
             <h1>WE WILL BE BACK SOON...</h1>
             <p>
                 We&apos;re making improvements to enhance your experience.
@@ -14,13 +15,15 @@ export default function Home() {
                 Additionally, we&apos;re simplifying the appointment booking process. 
                 Thank you for your patience as we work to make your experience with us even better.
             </p>
-            <a href="https://form.jotform.com/240195822046555" target="_blank">
+            <a className="p-2 bg-black text-white rounded-md" href="https://form.jotform.com/240195822046555" target="_blank">
                 <button type="submit">Send An Enquiry</button>
             </a>
         </div>
-        <div className="">
-            <Image src={HeroIMG} alt="header" width={400} height={400} />
-        </div>    
+
+        <div className="basis-1/3">
+            <Image className="rounded-md" src={HeroIMG} alt="header" width={500} height={500} />
+        </div>
+
     </section>
     </main>
   );
