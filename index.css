@@ -21,7 +21,7 @@ nav{
 }
 
 .logo{
-    position: fixed;
+    /* position: fixed; */
     height: auto;
     left: 330px;
     top: 35px;
@@ -109,4 +109,52 @@ nav{
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     cursor: pointer;
+  }
+
+  .inner-footer{
+    margin: 0;
+    padding: 0;
+  }
+
+  .social-links{
+    display: flex;
+  }
+
+  .social-links ul{
+    display: flex;
+  }
+
+  .social-items{
+    list-style: none;
+  }
+
+  .social-items a{
+    padding: 10px 20px;
+
+  }
+
+  .quick-links{
+    display: flex;
+    width: 500px;
+    margin: auto;
+  }
+
+  .quick-links ul{
+    display: flex;
+  }
+
+  .quick-items{
+    list-style: none;
+  }
+
+  .quick-items a{
+    text-decoration: none;
+    padding: 0px 15px;
+    font-size: 18px;
+    color: black;
+  }
+
+  .outer-footer{
+    padding: 10px;
+    text-align: center;
   }
