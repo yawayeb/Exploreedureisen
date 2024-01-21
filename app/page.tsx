@@ -18,7 +18,7 @@ export default function Home() {
                 <button type="submit">Send An Enquiry</button>
             </a>
         </div>
-        <div className="" style={{ wid}}>
+        <div className="">
             <Image src={HeroIMG} alt="header" width={400} height={400} />
         </div>    
     </section>
