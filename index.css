@@ -26,6 +26,7 @@ nav{
     left: 330px;
     top: 35px;
     width: 60px;
+    cursor: pointer;
   }
   
 .nav_links{
