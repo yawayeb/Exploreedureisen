@@ -8,9 +8,9 @@ import Logo from '@/public/logo.jpg'
 
 const navigation = [
   { name: 'Dashboard', href: '#', current: true },
-  { name: 'Team', href: '#', current: false },
-  { name: 'Projects', href: '#', current: false },
-  { name: 'Calendar', href: '#', current: false },
+  { name: 'Testimonials', href: '#', current: false },
+  { name: 'Partners', href: '#', current: false },
+  { name: 'Resources', href: '#', current: false },
 ]
 
 function classNames(...classes: string[]): string {
