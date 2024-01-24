@@ -12,7 +12,7 @@ export default async function Footer() {
             <a href="#">Partners</a>
           </li>
           <li className="quick-items">
-            <a href="#">Testimonials</a>
+            <a href="./testimonials">Testimonials</a>
           </li>
           <li className="quick-items">
             <a href="#">Resources</a>

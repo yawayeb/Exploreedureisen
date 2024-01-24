@@ -7,8 +7,8 @@ import Image from 'next/image'
 import Logo from '@/public/logo.jpg'
 
 const navigation = [
-  { name: 'Dashboard', href: '#', current: true },
-  { name: 'Testimonials', href: '#', current: false },
+  { name: 'Home', href: '#', current: true },
+  { name: 'Testimonials', href: './testimonials', current: false },
   { name: 'Partners', href: '#', current: false },
   { name: 'Resources', href: '#', current: false },
 ]
@@ -40,7 +40,7 @@ export default function Header() {
                 <div className="flex flex-shrink-0 items-center">
                   <a href='/'>
                   <Image
-                    className="h-8 w-auto"
+                    className="h-12 w-auto"
                     src={Logo}
                     alt="Your Company"
                     width={400}
