@@ -2,7 +2,7 @@ import { FaWhatsapp, FaInstagram, FaX } from "react-icons/fa6";
 
 export default async function Footer() {
   return (
-    <footer className="flex flex-col items-center content-center gap-3 md:absolute bottom-0 w-full">
+    <footer className="flex flex-col items-center content-center gap-3 md:absolute bottom-0 w-full my-8">
       <div className="">
         <ul className="flex gap-3 lg:gap-20">
           <li className="quick-items">

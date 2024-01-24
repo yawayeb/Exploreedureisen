@@ -1,7 +1,7 @@
 // app/Testimonial/page.tsx
 import React from 'react';
-import header from '@/app/components/Header'
-import Testimonials from '@/app/components/testimonials'; // Adjust the import path based on your folder structure
+import Testimonials from '@/app/components/Testimonials';
+import data from '@/lib/testimonial.data'
 
 const TestimonialPage: React.FC = () => {
   const testimonialsData = [
@@ -12,8 +12,7 @@ const TestimonialPage: React.FC = () => {
 
   return (
     <div>
-      <h1>Testimonials</h1>
-      <Testimonials testimonials={testimonialsData} />
+      <Testimonials testimonials={data} />
     </div>
   );
 };
