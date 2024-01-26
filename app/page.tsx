@@ -23,7 +23,7 @@ export default function Home() {
         <div className="basis-1/3">
             <Image className="rounded-md" src={HeroIMG} alt="header" width={500} height={500} />
         </div>
-
+    
     </section>
     </main>
   );

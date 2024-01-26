@@ -25,6 +25,7 @@ export default async function RootLayout({
         <Footer />
 
         </div>
+  <script type="text/javascript" id="hs-script-loader" async defer src="//js-eu1.hs-scripts.com/144030023.js"></script>
       </body>
     </html>
   );

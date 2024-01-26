@@ -9,8 +9,8 @@ import Logo from '@/public/logo.jpg'
 const navigation = [
   { name: 'Home', href: '#', current: true },
   { name: 'Testimonials', href: './testimonials', current: false },
-  { name: 'Partners', href: '#', current: false },
-  { name: 'Resources', href: '#', current: false },
+  { name: 'About', href: '#', current: false },
+  { name: 'FAQs On Study Abroad', href: '#', current: false },
 ]
 
 function classNames(...classes: string[]): string {
