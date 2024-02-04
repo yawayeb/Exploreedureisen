@@ -113,7 +113,7 @@ body{
     padding: 0;
   }
 
-  .social-links{
+  /* .social-links{
     display: flex;
   }
 
@@ -128,30 +128,29 @@ body{
   .social-items a{
     padding: 10px 20px;
 
-  }
+  } */
 
-  .quick-links{
+  /* .quick-links{
     display: flex;
-    /* width: 500px; */
     margin: auto;
-  }
+  } */
 
-  .quick-links ul{
+  /* .quick-links ul{
     display: flex;
   }
 
   .quick-items{
     list-style: none;
-  }
+  } */
 
-  .quick-items a{
+  /* .quick-items a{
     text-decoration: none;
     padding: 0px 15px;
     font-size: 18px;
     color: black;
-  }
+  } */
 
-  .outer-footer{
+  /* .outer-footer{
     padding: 10px;
     text-align: center;
-  }
+  } */

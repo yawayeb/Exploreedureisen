@@ -22,9 +22,8 @@ export default async function RootLayout({
         <div className="min-h-screen">
         <Header />
         {children}
-        <Footer />
-
         </div>
+        <Footer />
   <script type="text/javascript" id="hs-script-loader" async defer src="//js-eu1.hs-scripts.com/144030023.js"></script>
       </body>
     </html>

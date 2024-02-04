@@ -34,13 +34,13 @@ export const TestimonialCard: React.FC = () => {
 
 export const Card: React.FC = () => {
   return (
-    <div className="flex flex-col md:flex-row px-5 items-center justify-around gap-5">
+    <div className="flex  px-3 flex-col md:flex-row items-center justify-around gap-2 flex-wrap flex-grow">
       {data.map((show) => (
         <>
-          <div className="flex flex-col items-center justify-center gap-6 border border-orange-400 rounded-lg px-4 py-8 flex-1">
+          <div className="flex flex-col items-center justify-center gap-2 border border-orange-400 rounded-lg px-4 py-8 md:w-[400px] h-[400px]">
             <Image
-              className=""
-              style={{ borderRadius: "50%" }}
+              className="rounded-full w-36 h-36 object-cover"
+              // style={{ borderRadius: "100%" }}
               width={150}
               height={150}
               src={show.avatar}

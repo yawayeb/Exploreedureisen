@@ -2,24 +2,27 @@ import { FaWhatsapp, FaInstagram, FaX } from "react-icons/fa6";
 
 export default async function Footer() {
   return (
-    <footer className="flex flex-col items-center content-center gap-3 md:absolute bottom-0 w-full my-8">
-      <div className="">
-        <ul className="flex gap-3 lg:gap-20">
+    <footer className="flex flex-col items-center justify-center gap-3 w-full my-8">
+      <div className="px-1">
+        <ul className="flex gap-2 lg:gap-16">
           <li className="quick-items">
-            <a href="#">About</a>
+            <a href="./about" className="text-sm md:text-[1rem]">About</a>
           </li>
           <li className="quick-items">
-            <a href="#">Partners</a>
+            <a href="#" className="text-sm md:text-[1rem]">FAQs</a>
           </li>
           <li className="quick-items">
-            <a href="./testimonials">Testimonials</a>
+            <a href="./testimonials" className="text-sm md:text-[1rem]">Testimonials</a>
           </li>
           <li className="quick-items">
-            <a href="#">Resources</a>
+            <a href="/" className="text-sm md:text-[1rem]">Home</a>
+          </li>
+          <li className="quick-items">
+            <a href="#" className="text-sm md:text-[1rem]">Contact Us</a>
           </li>
         </ul>
       </div>
-      <div className="">
+      <div className="my-2">
         <div className="social-links">
           <ul className="flex gap-2">
             <li>

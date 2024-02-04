@@ -7,10 +7,11 @@ import Image from 'next/image'
 import Logo from '@/public/logo.jpg'
 
 const navigation = [
-  { name: 'Home', href: '#', current: true },
+  { name: 'Home', href: '/', current: true },
   { name: 'Testimonials', href: './testimonials', current: false },
-  { name: 'About', href: '#', current: false },
+  { name: 'About', href: './about', current: false },
   { name: 'FAQs On Study Abroad', href: '#', current: false },
+  { name: 'Contact Us', href: '#', current: false },
 ]
 
 function classNames(...classes: string[]): string {
