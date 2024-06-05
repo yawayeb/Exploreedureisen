@@ -1,7 +1,6 @@
 // components/Testimonials.tsx
 import React from "react";
-import { FaStar } from "react-icons/fa6";
-import Profile from "@/public/profile.jpg";
+import { FaStar } from "react-icons/fa";
 import Image from "next/image";
 import data, { Testimonial } from "@/lib/testimonial.data";
 
@@ -9,62 +8,49 @@ interface TestimonialsProps {
   testimonials: Testimonial[];
 }
 
-const Testimonials: React.FC<TestimonialsProps> = async ({ testimonials }) => {
+const Testimonials: React.FC<TestimonialsProps> = ({ testimonials }) => {
   return (
-    <div>
-      <TestimonialCard />
-    </div>
-  );
-};
-
-export const TestimonialCard: React.FC = () => {
-  const pics = Array.from({ length: 3 }, () => {
-    return <Card />;
-  });
-  return (
-    <section className="md:px-20">
-      <div className="flex flex-col items-center py-5 md:py-20">
-        <h3 className="text-orange-500">Testimonials</h3>
-        <h1 className="text-2xl">What our clients say about us.</h1>
+    <section className="bg-gray-100 py-16">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-12">
+          <h3 className="text-orange-500 text-lg">Testimonials</h3>
+          <h1 className="text-4xl font-semibold">What our clients say about us</h1>
+        </div>
+        <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          {testimonials.map((testimonial, index) => (
+            <Card key={index} testimonial={testimonial} />
+          ))}
+        </div>
       </div>
-      <Card />
     </section>
   );
 };
 
-export const Card: React.FC = () => {
+const Card: React.FC<{ testimonial: Testimonial }> = ({ testimonial }) => {
   return (
-    <div className="flex  px-3 flex-col md:flex-row items-center justify-around gap-2 flex-wrap flex-grow">
-      {data.map((show) => (
-        <>
-          <div className="flex flex-col items-center justify-center gap-2 border border-orange-400 rounded-lg px-4 py-8 md:w-[400px] h-[400px]">
-            <Image
-              className="rounded-full w-36 h-36 object-cover"
-              // style={{ borderRadius: "100%" }}
-              width={150}
-              height={150}
-              src={show.avatar}
-              alt="avatar"
-            />
-            <div className="flex flex-col items-center gap-4 md:gap-4">
-              <h1>{show.author}</h1>
-              <Rating />
-              <p className="text-center">{show.content}</p>
-            </div>
-          </div>
-        </>
-      ))}
+    <div className="bg-white border border-orange-400 rounded-lg p-6 flex flex-col items-center shadow-lg">
+      <Image
+        className="rounded-full w-36 h-36 object-cover mb-4"
+        width={144}
+        height={144}
+        src={testimonial.avatar}
+        alt={testimonial.author}
+      />
+      <h3 className="text-xl font-semibold mb-2">{testimonial.author}</h3>
+      <Rating />
+      <p className="text-gray-700 text-center mt-4">{testimonial.content}</p>
     </div>
   );
 };
 
-export const Rating: React.FC = () => {
-  const StarArr = Array.from({ length: 5 }, (_, i) => (
-    <div className="text-yellow-400">
-      <FaStar />
+const Rating: React.FC = () => {
+  return (
+    <div className="flex justify-center">
+      {Array.from({ length: 5 }, (_, i) => (
+        <FaStar key={i} className="text-yellow-400" />
+      ))}
     </div>
-  ));
-  return <div className="flex flex-row">{StarArr}</div>;
+  );
 };
 
 export default Testimonials;

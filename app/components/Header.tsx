@@ -11,7 +11,7 @@ const navigation = [
   { name: 'Testimonials', href: './testimonials', current: false },
   { name: 'About', href: './about', current: false },
   { name: 'FAQs On Study Abroad', href: '#', current: false },
-  { name: 'Contact Us', href: '#', current: false },
+  { name: 'Contact Us', href: './contactus', current: false },
 ]
 
 function classNames(...classes: string[]): string {
